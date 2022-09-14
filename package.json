@@ -1,0 +1,33 @@
+{
+  "jest": {
+    "collectCoverage": true,
+    "coverageReporters": [
+      "lcov",
+      "text"
+    ],
+    "coverageDirectory": "./output/code-coverage",
+    "reporters": [
+      "default",
+      "./node_modules/jest-html-reporter"
+    ]
+  },
+  "jest-html-reporter": {
+    "pageTitle": "Unit Tests",
+    "outputPath": "./output/test-report.html",
+    "includeFailureMsg": true
+  },
+  "devDependencies": {
+    "jest": "^29.0.3",
+    "jest-html-reporter": "^3.7.0"
+  },
+  "scripts": {
+    "test": "jest --watchAll",
+    "start": "node server"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "json-server": "^0.17.0",
+    "sqlite3": "^5.0.11",
+    "uuid": "^3.3.3"
+  }
+}
