@@ -3,7 +3,7 @@ const {add, multiply, subtract, divide} = require('../hooks');
 describe("tests using hooks", () => {
     var input1 = 0
     var input2 = 0
-    test_num = 0;
+    var test_num = 0;
    
     beforeAll(() => {
         console.log("Starting hooks.test.js...");
